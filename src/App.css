@@ -16,28 +16,41 @@
 
 .App-body {
   background-color: #e2d5cc;
+}
+
+.introduction {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/public/sfondo-chiara.jpg");
+  background-image: url("/public/sfondo-chiara.webp");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: initial;
   background-size: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+  .introduction {
+    background-position: center;
+  }
 }
 
 .hero {
   border: 2px solid white;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.chi-bon-est {
+.hero-title {
   font-family: "Oswald", sans-serif;
 }
 
-.chi-sono {
-  font-size: calc(10px + 1.5vmin);
+.hero-text {
+  font-size: calc(10px + 1vmin);
   font-family: "Quicksand", sans-serif;
+}
+
+.services-image {
+  height: 100px;
+  width: 300px;
 }
