@@ -1,26 +1,21 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-
+import MyNavbar from "./components/NavBar";
 import PerInfo from "./components/PerInfo";
-import ChiaraLashmaker from "./components/ChiaraLashmaker";
-import ServiziCiglia from "./components/ServiziCiglia";
+import Home from "./components/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <Router>
+      <div className="App">
+        <MyNavbar />
         <PerInfo />
-      </header>
-
-      <div className="App-body">
-        <div className="introduction">
-          <ChiaraLashmaker />
-        </div>
-        <div>
-          <ServiziCiglia />
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

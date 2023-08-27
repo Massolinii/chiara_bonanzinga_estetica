@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Quicksand&display=swap");
+
+.chiara-section {
+  padding: 20px 0;
+  background-image: url("/public/beautician-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+.hero-title {
+  font-family: "Oswald", sans-serif;
+}
+
+.hero-text {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-text {
+    font-size: 20px;
+  }
+}

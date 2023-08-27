@@ -1,0 +1,18 @@
+.scopri-servizi {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.scopri-link {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+}
+
+.scopri-button {
+  width: 250px;
+  padding: 15px;
+  margin: auto;
+  border: 2px solid rgb(44, 44, 44);
+  border-radius: 5px;
+  background-color: #fdf4f4;
+}
