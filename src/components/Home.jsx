@@ -7,7 +7,6 @@ export default function Home() {
     <div className="home-background">
       {/* home-background Css in App.css */}
       <ChiaraLashmaker />
-
       <HomeCarousel />
       <ScopriServizi />
     </div>

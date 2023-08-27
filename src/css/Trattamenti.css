@@ -1,0 +1,28 @@
+.table-custom {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  border: 2px solid rgb(73, 47, 47);
+}
+
+.table-custom th,
+.table-custom td {
+  text-align: left;
+  font-size: large;
+  font-weight: 600;
+  padding: 3px 5px 3px 5px;
+}
+
+.table-custom th {
+  background-color: #cea6a6;
+}
+
+.table-custom th:nth-child(1),
+.table-custom td:nth-child(1) {
+  width: 80%;
+}
+
+.table-custom th:nth-child(2),
+.table-custom td:nth-child(2) {
+  width: 20%;
+}

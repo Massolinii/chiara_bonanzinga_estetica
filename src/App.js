@@ -4,6 +4,7 @@ import MyNavbar from "./components/NavBar";
 import PerInfo from "./components/PerInfo";
 import Home from "./components/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Trattamenti from "./components/Trattamenti";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <PerInfo />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/trattamenti" element={<Trattamenti />} />
         </Routes>
       </div>
     </Router>
