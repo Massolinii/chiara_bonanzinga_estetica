@@ -9,7 +9,7 @@ export default function ScopriTrattamenti() {
       </Link>
       <br />
       <br />
-      <Link className="scopri-link">
+      <Link className="scopri-link" to={"/certificati"}>
         <h5 className="scopri-button">CERTIFICAZIONI</h5>
       </Link>
       <br />

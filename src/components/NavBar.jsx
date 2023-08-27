@@ -9,7 +9,7 @@ export default function NavBar() {
   return (
     <Navbar expand="lg" fixed="top" className="pb-0" expanded={expanded}>
       <Container className="mobile-container-padding">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             src="/logo_chiara.png"
             alt="logo Chiara Lashmaker"
@@ -24,7 +24,7 @@ export default function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
             <Nav.Link
-              href="#home"
+              href="/"
               className="full-width-link navbar-link-home mobile-border-top mobile-border-bottom"
               onClick={() => setExpanded(false)}
             >
@@ -32,18 +32,18 @@ export default function NavBar() {
             </Nav.Link>
 
             <Nav.Link
-              href="#servizi"
+              href="/trattamenti"
               className="full-width-link navbar-link-others mobile-border-bottom"
               onClick={() => setExpanded(false)}
             >
-              Servizi e Prezzi
+              Trattamenti
             </Nav.Link>
             <Nav.Link
-              href="#contatti"
+              href="/certificati"
               className="full-width-link navbar-link-others mobile-border-bottom"
               onClick={() => setExpanded(false)}
             >
-              Contatti
+              Certificati
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

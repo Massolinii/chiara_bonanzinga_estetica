@@ -4,9 +4,6 @@
   overflow-x: hidden;
   overflow-y: hidden;
   padding-top: 118px;
-}
-
-.home-background {
   background: rgb(255, 255, 255);
   background: -moz-radial-gradient(
     circle,
@@ -24,4 +21,7 @@
     rgba(206, 166, 166, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cea6a6",GradientType=1);
+}
+
+.home-background {
 }
