@@ -4,9 +4,12 @@ import "../css/ScopriTrattamenti.css";
 export default function ScopriTrattamenti() {
   return (
     <div className="scopri-servizi">
-      <Link className="scopri-link" to={"/trattamenti"}>
-        <h5 className="scopri-button">SCOPRI I TRATTAMENTI</h5>
-      </Link>
+      <h5 className="scopri-button">
+        <Link className="scopri-link" to={"/trattamenti"}>
+          SCOPRI I TRATTAMENTI{" "}
+        </Link>
+      </h5>
+
       <br />
       <br />
       <Link className="scopri-link" to={"/certificati"}>

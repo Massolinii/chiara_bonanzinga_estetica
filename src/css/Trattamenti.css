@@ -1,28 +1,47 @@
+.trattamenti-title {
+  font-family: "Oswald", sans-serif;
+  font-size: xx-large;
+}
+
 .table-custom {
   width: 100%;
   max-width: 600px;
   margin: auto;
-  border: 2px solid rgb(73, 47, 47);
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  border-collapse: collapse;
+  border: 1px solid black;
 }
 
 .table-custom th,
+.table-custom tr,
 .table-custom td {
   text-align: left;
   font-size: large;
   font-weight: 600;
-  padding: 3px 5px 3px 5px;
+  padding: 5px 8px;
+  border: none;
 }
 
 .table-custom th {
   background-color: #cea6a6;
+  border-bottom: 1px solid black;
+}
+
+.table-custom td {
+  vertical-align: middle;
 }
 
 .table-custom th:nth-child(1),
 .table-custom td:nth-child(1) {
-  width: 80%;
+  width: 70%;
 }
 
 .table-custom th:nth-child(2),
 .table-custom td:nth-child(2) {
-  width: 20%;
+  width: 30%;
+}
+
+.small-text {
+  font-size: x-small;
 }

@@ -5,11 +5,13 @@ import PerInfo from "./components/PerInfo";
 import Home from "./components/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Trattamenti from "./components/Trattamenti";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop />
         <MyNavbar />
         <PerInfo />
         <Routes>

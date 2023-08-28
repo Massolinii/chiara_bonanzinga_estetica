@@ -23,5 +23,8 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#cea6a6",GradientType=1);
 }
 
-.home-background {
+@media (max-width: 575px) {
+  .App {
+    padding-top: 98px;
+  }
 }

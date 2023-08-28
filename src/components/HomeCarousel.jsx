@@ -12,12 +12,6 @@ export default function HomeCarousel() {
     }
   };
 
-  const goPrev = () => {
-    if (swiperRef.current) {
-      swiperRef.current.swiper.slidePrev();
-    }
-  };
-
   return (
     <div className="swiper-div">
       <Swiper
@@ -32,7 +26,7 @@ export default function HomeCarousel() {
         <SwiperSlide onClick={goNext}>
           <div className="slide-container">
             <img
-              src="/ServiziCiglia/laminazione.jpg"
+              src="/ServiziCiglia/laminazione.webp"
               alt="Laminazione ciglia"
             />
             <div className="slide-caption">
@@ -42,7 +36,7 @@ export default function HomeCarousel() {
         </SwiperSlide>
         <SwiperSlide onClick={goNext}>
           <div className="slide-container">
-            <img src="/ServiziCiglia/volume.jpg" alt="Volume ciglia" />
+            <img src="/ServiziCiglia/volume.webp" alt="Volume ciglia" />
             <div className="slide-caption">
               <h3>Volume</h3>
             </div>
@@ -50,7 +44,7 @@ export default function HomeCarousel() {
         </SwiperSlide>
         <SwiperSlide onClick={goNext}>
           <div className="slide-container">
-            <img src="/ServiziCiglia/megavolume.jpg" alt="Megavolume ciglia" />
+            <img src="/ServiziCiglia/megavolume.webp" alt="Megavolume ciglia" />
             <div className="slide-caption">
               <h3>Megavolume</h3>
             </div>
@@ -58,7 +52,7 @@ export default function HomeCarousel() {
         </SwiperSlide>
         <SwiperSlide onClick={goNext}>
           <div className="slide-container">
-            <img src="/ServiziCiglia/wet.jpg" alt="Wet ciglia" />
+            <img src="/ServiziCiglia/wet.webp" alt="Wet ciglia" />
             <div className="slide-caption">
               <h3>WET</h3>
             </div>
@@ -66,14 +60,14 @@ export default function HomeCarousel() {
         </SwiperSlide>
         <SwiperSlide onClick={goNext}>
           <div className="slide-container">
-            <img src="/ServiziCiglia/onetoone.jpg" alt="One To One ciglia" />
+            <img src="/ServiziCiglia/onetoone.webp" alt="One To One ciglia" />
             <div className="slide-caption">
               <h3>One To One</h3>
             </div>
           </div>
         </SwiperSlide>
       </Swiper>
-      <h6>TOCCA LE FOTO PER VEDERNE ALTRE</h6>
+      <h6 className="action-carosello">TOCCA LE FOTO PER VEDERNE ALTRE</h6>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 import "../css/NavBar.css";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [expanded, setExpanded] = useState(false);
@@ -11,7 +12,7 @@ export default function NavBar() {
       <Container className="mobile-container-padding">
         <Navbar.Brand href="/">
           <img
-            src="/logo_chiara.png"
+            src="/logo_chiara.webp"
             alt="logo Chiara Lashmaker"
             id="navbar-logo"
           />
@@ -23,28 +24,28 @@ export default function NavBar() {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link
-              href="/"
+            <Link
+              to="/"
               className="full-width-link navbar-link-home mobile-border-top mobile-border-bottom"
               onClick={() => setExpanded(false)}
             >
               Home
-            </Nav.Link>
+            </Link>
 
-            <Nav.Link
-              href="/trattamenti"
+            <Link
+              to="/trattamenti"
               className="full-width-link navbar-link-others mobile-border-bottom"
               onClick={() => setExpanded(false)}
             >
               Trattamenti
-            </Nav.Link>
-            <Nav.Link
-              href="/certificati"
+            </Link>
+            <Link
+              to="/certificati"
               className="full-width-link navbar-link-others mobile-border-bottom"
               onClick={() => setExpanded(false)}
             >
               Certificati
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

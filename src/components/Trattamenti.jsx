@@ -1,11 +1,18 @@
 import "../css/Trattamenti.css";
 
 export default function Trattamenti() {
-  const formatPrice = (price) => `€ ${price},00`;
+  const formatPrice = (price) => (
+    <>
+      € {price}
+      <span className="small-text">,00</span>
+    </>
+  );
 
   return (
     <div className="container mt-5">
-      <h4 className="mt-4 mb-3 text-center">Trattamenti ciglia</h4>
+      <h4 className="mt-4 mb-3 text-center trattamenti-title">
+        Trattamenti CIGLIA
+      </h4>
       <table className="table table-custom table-responsive table-striped table-bordered">
         <thead>
           <tr>
@@ -45,7 +52,9 @@ export default function Trattamenti() {
         </tbody>
       </table>
 
-      <h4 className="mt-4 mb-3  text-center">Trattamenti cerette</h4>
+      <h4 className="mt-4 mb-3 text-center trattamenti-title">
+        Trattamenti CERETTE
+      </h4>
       <table className="table table-custom table-responsive table-striped table-bordered">
         <thead>
           <tr>

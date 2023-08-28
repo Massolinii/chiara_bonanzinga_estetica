@@ -9,9 +9,23 @@
   padding: 3px;
 }
 
-.nav-link {
+@media (max-width: 575px) {
+  .navbar-brand #navbar-logo {
+    width: 80px;
+    max-width: 80px;
+    padding: 3px;
+  }
+}
+
+.navbar-toggler {
+  border: 2px solid rgb(73, 73, 73);
+}
+
+.full-width-link {
   color: rgb(0, 0, 0) !important;
   font-weight: bolder;
+  text-decoration: none;
+  padding: 6px;
 }
 
 .navbar-nav {
