@@ -3,12 +3,12 @@ import "../css/ChiaraLashmaker.css";
 
 export default function ChiaraLashmaker() {
   return (
-    <div className="chiara-section">
-      <Container>
+
+      <Container fluid className="hero-section container-section py-4">
         <Row className="justify-content-center">
-          <Col xs={11} md={10} lg={9} className="hero p-1">
+          <Col xs={11} md={9} lg={7} className="hero p-3 px-4">
             <h1 className="hero-title">CHIARA BONANZINGA ESTETICA</h1>
-            <p className="hero-text ps-2 mb-2">
+            <p className="hero-text mb-2">
               Il luogo ideale per prenderti cura del tuo sguardo e della tua
               bellezza. Situato in Via Palermo n°780 (ME), lasciati stupire dai
               miei trattamenti certificati di Laminazione Ciglia e Sopraciglia,
@@ -29,6 +29,5 @@ export default function ChiaraLashmaker() {
           </Col>
         </Row>
       </Container>
-    </div>
   );
 }

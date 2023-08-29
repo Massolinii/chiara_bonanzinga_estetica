@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import "../css/HomeCarousel.css";
 import "swiper/css";
 
@@ -13,7 +14,9 @@ export default function HomeCarousel() {
   };
 
   return (
-    <div className="swiper-div">
+      <Container fluid classname="container-section swiper-container">
+        <Row className="justify-content-center">
+        <Col xs={11} md={9} lg={7} className="py-4 px-0">
       <Swiper
         ref={swiperRef}
         loop={true}
@@ -68,6 +71,8 @@ export default function HomeCarousel() {
         </SwiperSlide>
       </Swiper>
       <h6 className="action-carosello">TOCCA LE FOTO PER VEDERNE ALTRE</h6>
-    </div>
+      </Col>
+      </Row>
+      </Container>
   );
 }

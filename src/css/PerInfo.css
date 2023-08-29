@@ -1,6 +1,7 @@
 .per-info-bg {
   /* background-color: rgba(89, 201, 163, 0.767); */
-  background: rgb(244, 245, 235);
+  /* background: rgb(244, 245, 235); */
+  background: white;
   text-align: center;
   font-weight: bold;
   border-bottom: 1px solid grey;
