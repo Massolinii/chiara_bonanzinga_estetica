@@ -1,6 +1,7 @@
 import "../css/Trattamenti.css";
 
 export default function Trattamenti() {
+  {/* WIP on text-formatting for the price section*/}
   const formatPrice = (price) => (
     <>
       € {price}
