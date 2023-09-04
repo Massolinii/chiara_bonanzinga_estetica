@@ -13,7 +13,6 @@ function App() {
       <div className="App">
         <ScrollToTop />
         <MyNavbar />
-        {/* <PerInfo /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/trattamenti" element={<Trattamenti />} />

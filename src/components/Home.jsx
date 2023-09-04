@@ -2,6 +2,7 @@ import HomeCarousel from "./HomeCarousel";
 import ChiaraLashmaker from "./ChiaraLashmaker";
 import ScopriServizi from "./ScopriTrattamenti";
 import { Container } from "react-bootstrap";
+import ContattiHome from "./ContattiHome";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <ChiaraLashmaker />
         <HomeCarousel />
         <ScopriServizi />
+        <ContattiHome />
       </Container>
     </div>
   );
