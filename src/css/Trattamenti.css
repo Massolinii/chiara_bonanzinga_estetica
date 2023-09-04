@@ -45,3 +45,10 @@
 .small-text {
   font-size: x-small;
 }
+
+@media (max-width: 597px) {
+  .table-custom {
+    border-left: 0;
+    border-right: 0;
+  }
+}

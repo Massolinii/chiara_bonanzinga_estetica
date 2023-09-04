@@ -14,7 +14,7 @@ export default function NavBar() {
           <img
             src="/logo_chiara.webp"
             alt="logo Chiara Lashmaker"
-            className="navbar-logo navbar-logo-mobile" 
+            className="navbar-logo navbar-logo-mobile"
           />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -39,26 +39,28 @@ export default function NavBar() {
             >
               Trattamenti
             </Link>
-            <Navbar.Brand href="/">
-          <img
-            src="/logo_chiara.webp"
-            alt="logo Chiara Lashmaker"
-            className="navbar-logo navbar-logo-desktop" 
-          />
-        </Navbar.Brand>
-            <Link
-              to="/certificati"
-              className="full-width-link navbar-link-others mobile-border-bottom"
-              onClick={() => setExpanded(false)}
-            >
-              Certificati
-            </Link>
+            <Navbar.Brand href="/" className="navbar-logo-desktop">
+              <img
+                src="/logo_chiara.webp"
+                alt="logo Chiara Lashmaker"
+                className="navbar-logo"
+              />
+            </Navbar.Brand>
+
             <Link
               to="/galleria"
               className="full-width-link navbar-link-others mobile-border-bottom"
               onClick={() => setExpanded(false)}
             >
               Galleria
+            </Link>
+
+            <Link
+              to="/certificati"
+              className="full-width-link navbar-link-others mobile-border-bottom"
+              onClick={() => setExpanded(false)}
+            >
+              Contatti
             </Link>
           </Nav>
         </Navbar.Collapse>

@@ -10,12 +10,14 @@ export default function ScopriTrattamenti() {
           SCOPRI I TRATTAMENTI{" "}
         </Link>
       </h5>
+      <br />
+      <br />
 
-      <br />
-      <br />
-      <Link className="scopri-link" to={"/certificati"}>
-        <h5 className="scopri-button">CERTIFICAZIONI</h5>
-      </Link>
+      <h5 className="scopri-button">
+        <Link className="scopri-link" to={"/galleria"}>
+          GALLERIA{" "}
+        </Link>
+      </h5>
       <br />
       <br />
     </Container>

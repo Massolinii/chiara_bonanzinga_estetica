@@ -8,6 +8,10 @@
   right: 0;
 }
 
+.navbar-brand {
+  margin-right: 0;
+}
+
 .navbar-logo {
   width: 100px;
   max-width: 100px;
@@ -18,22 +22,10 @@
   display: none;
 }
 
-@media (max-width: 575px) {
-  .navbar-brand .navbar-logo {
-    width: 80px;
-    max-width: 80px;
-    padding: 3px;
-  }
-
-  .navbar-logo-mobile {
-    display: initial;
-  }
-
-  .navbar-logo-desktop {
-    display: none;
-  }
-  
-  
+.navbar-logo-desktop {
+  display: block;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .navbar-toggler {
@@ -45,20 +37,47 @@
   font-weight: bolder;
   text-decoration: none;
   padding: 6px;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .navbar-nav {
   flex-direction: row;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 576px) {
+  .navbar-collapse {
+    justify-content: center;
+    align-items: center;
+  }
 
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
   .navbar-collapse {
     position: absolute;
     z-index: 2;
     top: 7rem;
     left: 0;
     right: 0;
+  }
+
+  .navbar-brand .navbar-logo {
+    width: 80px;
+    max-width: 80px;
+    padding: 3px;
+  }
+
+  .navbar-logo-mobile {
+    display: block;
+  }
+
+  .navbar-logo-desktop {
+    display: none;
   }
 
   .full-width-link {
@@ -73,7 +92,7 @@
   }
 
   .mobile-container-padding {
-    padding: 0;
+    padding: 10px;
   }
 
   .mobile-border-top {
