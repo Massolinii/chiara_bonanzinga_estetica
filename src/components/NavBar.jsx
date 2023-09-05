@@ -15,6 +15,7 @@ export default function NavBar() {
             src="/logo_chiara.webp"
             alt="logo Chiara Lashmaker"
             className="navbar-logo navbar-logo-mobile"
+            onClick={() => setExpanded(false)}
           />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -44,6 +45,7 @@ export default function NavBar() {
                 src="/logo_chiara.webp"
                 alt="logo Chiara Lashmaker"
                 className="navbar-logo"
+                onClick={() => setExpanded(false)}
               />
             </Navbar.Brand>
 
@@ -56,7 +58,7 @@ export default function NavBar() {
             </Link>
 
             <Link
-              to="/certificati"
+              to="/#contatti"
               className="full-width-link navbar-link-others mobile-border-bottom"
               onClick={() => setExpanded(false)}
             >
