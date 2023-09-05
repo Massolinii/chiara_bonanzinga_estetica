@@ -1,5 +1,5 @@
 .trattamenti-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: xx-large;
 }
 
@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 600px;
   margin: auto;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: bold;
   border-collapse: collapse;
   border: 1px solid black;
