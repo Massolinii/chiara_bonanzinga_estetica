@@ -29,22 +29,22 @@ import WhiteSpace from "./WhiteSpace";
 
 export default function ImageGrid() {
   const images = [
-    { src: img11, double: false },
-    { src: img13, double: false },
+    { src: img11, double: false, title: "Wet" },
+    { src: img13, double: false, title: "One To One" },
     { src: "", double: false },
-    { src: img3, double: false },
+    { src: img3, double: false, title: "One To One" },
     { src: "", double: false },
     { src: "", double: false },
-    { src: laminazione, double: true },
-    { src: img4, double: false },
-    { src: img5, double: false },
-    { src: volume, double: true },
-    { src: img6, double: false },
+    { src: laminazione, double: true, title: "Laminazione" },
+    { src: img4, double: false, title: "Megavolume" },
+    { src: img5, double: false, title: "Megavolume" },
+    { src: volume, double: true, title: "Volume" },
+    { src: img6, double: false, title: "Laminazione" },
     { src: "", double: false },
-    { src: img7, double: false },
-    { src: img8, double: false },
+    { src: img7, double: false, title: "Volume" },
+    { src: img12, double: false, title: "Laminazione" },
     { src: "", double: false },
-    { src: wet, double: true },
+    { src: wet, double: true, title: "Wet" },
     { src: "", double: false },
   ];
   return (
@@ -60,7 +60,11 @@ export default function ImageGrid() {
             className="p-0"
           >
             {imgObj.src ? (
-              <ImageCard src={imgObj.src} alt={`Image ${index + 1}`} />
+              <ImageCard
+                src={imgObj.src}
+                alt={`Image ${index + 1}`}
+                title={imgObj.title}
+              />
             ) : (
               <div className="empty-space"></div>
             )}
