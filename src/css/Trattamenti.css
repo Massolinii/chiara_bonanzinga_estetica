@@ -1,0 +1,75 @@
+.section-trattamenti {
+  color: blanchedalmond;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-service {
+  text-align: left;
+  font-size: larger;
+}
+
+.menu-price {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.small-text {
+  font-size: x-small;
+}
+
+.ruler-left {
+  border: 0;
+  border-left: 2px solid blanchedalmond;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.up::before,
+.down::before {
+  content: "";
+  border: solid blanchedalmond;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+.menu-title {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-title::before {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+.menu-title.open::before {
+  transform: rotate(180deg);
+}
+
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.show {
+  max-height: 100vh;
+}
+
+.hide {
+  max-height: 0;
+}

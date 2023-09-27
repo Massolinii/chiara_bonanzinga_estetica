@@ -11,5 +11,13 @@
 }
 
 body {
-  background-color: #000000;
+  /*   background-color: #130901; */
+  background-color: #312a2a;
+}
+
+.ruler {
+  border: 0;
+  border-top: 2px solid antiquewhite;
+  margin: clamp(5%, 5%, 5%) 20px;
+  color: antiquewhite;
 }

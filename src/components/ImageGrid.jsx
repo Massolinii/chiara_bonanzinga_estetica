@@ -30,22 +30,26 @@ import WhiteSpace from "./WhiteSpace";
 export default function ImageGrid() {
   const images = [
     { src: img11, double: false, title: "Wet" },
-    { src: img13, double: false, title: "One To One" },
+    { src: img8, double: false, title: "One To One" },
     { src: "", double: false },
-    { src: img3, double: false, title: "One To One" },
+    { src: img13, double: false, title: "One To One" },
     { src: "", double: false },
     { src: "", double: false },
     { src: laminazione, double: true, title: "Laminazione" },
     { src: img4, double: false, title: "Megavolume" },
     { src: img5, double: false, title: "Megavolume" },
     { src: volume, double: true, title: "Volume" },
-    { src: img6, double: false, title: "Laminazione" },
+    { src: img9, double: false, title: "Laminazione" },
     { src: "", double: false },
     { src: img7, double: false, title: "Volume" },
     { src: img12, double: false, title: "Laminazione" },
     { src: "", double: false },
     { src: wet, double: true, title: "Wet" },
     { src: "", double: false },
+    { src: img1, double: false, title: "Laminazione" },
+    { src: img2, double: false, title: "Laminazione" },
+    { src: img3, double: false, title: "Laminazione" },
+    { src: img6, double: false, title: "Laminazione" },
   ];
   return (
     <Container fluid>
