@@ -1,12 +1,21 @@
 .navbar {
-  background-color: #cea6a6;
-  border-bottom: 1px solid grey;
   height: 7rem;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-collapse {
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  align-items: center;
 }
 
 .navbar-brand {
@@ -14,101 +23,18 @@
 }
 
 .navbar-logo {
-  width: 100px;
-  max-width: 100px;
-  padding: 3px;
+  width: 80px;
+  max-width: 80px;
 }
 
 .navbar-logo-mobile {
   display: none;
 }
 
-.navbar-logo-desktop {
-  display: block;
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-
-.navbar-toggler {
-  border: 2px solid rgb(73, 73, 73);
-}
-
 .full-width-link {
-  color: rgb(0, 0, 0) !important;
-  font-weight: bolder;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 6px;
   padding-left: 2vw;
   padding-right: 2vw;
-}
-
-.navbar-nav {
-  flex-direction: row;
-}
-
-@media (min-width: 576px) {
-  .navbar-collapse {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navbar-nav {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-@media (max-width: 991px) {
-  .navbar-collapse {
-    position: absolute;
-    z-index: 2;
-    top: 7rem;
-    left: 0;
-    right: 0;
-  }
-
-  .navbar-brand .navbar-logo {
-    width: 80px;
-    max-width: 80px;
-    padding: 3px;
-  }
-
-  .navbar-logo-mobile {
-    display: block;
-  }
-
-  .navbar-logo-desktop {
-    display: none;
-  }
-
-  .full-width-link {
-    width: 100%;
-    margin: 0 !important;
-    text-align: center;
-  }
-
-  .navbar-expand-lg .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .mobile-container-padding {
-    padding: 10px;
-  }
-
-  .mobile-border-top {
-    border-top: 1px solid white;
-  }
-
-  .mobile-border-bottom {
-    border-bottom: 1px solid white;
-  }
-
-  .navbar-link-home {
-    background-color: rgb(148, 94, 94);
-  }
-
-  .navbar-link-others {
-    background-color: #cea6a6;
-  }
 }
