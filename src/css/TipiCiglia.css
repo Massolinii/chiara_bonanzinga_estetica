@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800&display=swap");
+
+.section-tipiciglia {
+  color: blanchedalmond;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.small {
+  font-size: small;
+}
+
+.titolo-trattamento {
+  font-size: xx-large;
+}

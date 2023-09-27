@@ -15,7 +15,7 @@ export default function Trattamenti() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-      <Col xs={12} md={3} className="ruler-left mt-2 mb-2">
+      <Col xs={12} md={3} className="ruler-left mt-4 mb-2">
         <h3
           className={`p-2 mb-4 menu-title ${isOpen ? "open" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
@@ -72,11 +72,12 @@ export default function Trattamenti() {
   return (
     <Container fluid className="section-trattamenti">
       <Row className="ms-3">
-        <Col xs={6} md={3}>
+        <Col xs={12} md={3}>
           <h2 className="pb-3">Trattamenti</h2>
           <h4>
             Vieni a lasciarti coccolare da trattamenti per la bellezza di tutto
             il tuo corpo. Dalle ciglia, alle cerette, ai trattamenti per unghie.
+            <br />
             Esiste la soluzione adatta per chiunque.
           </h4>
         </Col>
