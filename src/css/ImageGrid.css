@@ -8,6 +8,12 @@
   padding: 8px;
 }
 
+.image-card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .img-fluid {
   min-height: 100%;
   min-width: 100%;
@@ -15,13 +21,16 @@
   border-radius: 4px;
 }
 
-.image-card img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
 .empty-space {
   background-color: transparent;
   height: 100%;
+}
+
+.opacity-effect {
+  opacity: 0.5;
+}
+
+.image-card:hover .opacity-effect,
+.image-card:active .opacity-effect {
+  opacity: 1;
 }

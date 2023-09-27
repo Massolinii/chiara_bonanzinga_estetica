@@ -25,6 +25,7 @@ import megavolume from "../assets/ServiziCiglia/megavolume.webp";
 import onetoone from "../assets/ServiziCiglia/onetoone.webp";
 import volume from "../assets/ServiziCiglia/volume.webp";
 import wet from "../assets/ServiziCiglia/wet.webp";
+import WhiteSpace from "./WhiteSpace";
 
 export default function ImageGrid() {
   const images = [
@@ -37,16 +38,19 @@ export default function ImageGrid() {
     { src: laminazione, double: true },
     { src: img4, double: false },
     { src: img5, double: false },
-    { src: megavolume, double: true },
+    { src: volume, double: true },
     { src: img6, double: false },
     { src: "", double: false },
     { src: img7, double: false },
     { src: img8, double: false },
     { src: "", double: false },
+    { src: wet, double: true },
+    { src: "", double: false },
   ];
   return (
     <Container fluid>
-      <Row className="px-2">
+      <WhiteSpace />
+      <Row className="px-2 ">
         {images.map((imgObj, index) => (
           <Col
             xs={imgObj.double ? 12 : 6}
@@ -63,6 +67,7 @@ export default function ImageGrid() {
           </Col>
         ))}
       </Row>
+      <WhiteSpace />
     </Container>
   );
 }
