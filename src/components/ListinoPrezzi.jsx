@@ -1,8 +1,9 @@
 import { Col, Container, Row } from "react-bootstrap";
-import "../css/Trattamenti.css";
+import "../css/ListinoPrezzi.css";
 import { useState } from "react";
+import TitleSection from "./TitleSection";
 
-export default function Trattamenti() {
+export default function ListinoPrezzi() {
   const formatPrice = (price) => (
     <>
       {" "}
@@ -70,15 +71,16 @@ export default function Trattamenti() {
   ];
 
   return (
-    <Container fluid className="section-trattamenti">
-      <Row className="ms-3">
-        <Col xs={12} md={3}>
-          <h2 className="pb-3">Trattamenti</h2>
+    <Container fluid className="section-listinoprezzi">
+      <Row className="ms-3 my-5">
+        <TitleSection label={"LISTINO PREZZI"} />
+        <Col xs={12} md={3} className="py-4">
           <h4>
             Vieni a lasciarti coccolare da trattamenti per la bellezza di tutto
-            il tuo corpo. Dalle ciglia, alle cerette, ai trattamenti per unghie.
-            <br />
-            Esiste la soluzione adatta per chiunque.
+            il tuo corpo.
+            <br /> <br />
+            Dalle ciglia alle cerette alle unghie. Esiste la soluzione adatta
+            per chiunque.
           </h4>
         </Col>
         <MenuSection title="Ciglia" items={ciglia} />

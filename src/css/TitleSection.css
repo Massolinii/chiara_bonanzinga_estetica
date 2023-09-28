@@ -1,0 +1,19 @@
+.white-space-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.white-space-label {
+  margin: 0;
+  padding: 0;
+  font-size: xx-large;
+  font-weight: 800;
+  color: antiquewhite;
+}
+
+.ruler {
+  border-top: 3px solid antiquewhite;
+  margin: 0;
+  padding: 0;
+  color: antiquewhite;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ImageCard from "./ImageCard";
-import "../css/ImageGrid.css";
+import "../css/Galleria.css";
 
 import img1 from "../assets/Galleria/gallery_1.webp";
 import img2 from "../assets/Galleria/gallery_2.webp";
@@ -25,43 +25,44 @@ import megavolume from "../assets/ServiziCiglia/megavolume.webp";
 import onetoone from "../assets/ServiziCiglia/onetoone.webp";
 import volume from "../assets/ServiziCiglia/volume.webp";
 import wet from "../assets/ServiziCiglia/wet.webp";
-import WhiteSpace from "./WhiteSpace";
+import WhiteSpace from "./TitleSection";
+import TitleSection from "./TitleSection";
 
 export default function ImageGrid() {
   const images = [
-    { src: img11, double: false, title: "Wet" },
-    { src: img8, double: false, title: "One To One" },
+    { src: img11, double: false, title: "WET" },
+    { src: img8, double: false, title: "ONE TO ONE" },
     { src: "", double: false },
-    { src: img13, double: false, title: "One To One" },
+    { src: img13, double: false, title: "ONE TO ONE" },
     { src: "", double: false },
     { src: "", double: false },
-    { src: laminazione, double: true, title: "Laminazione" },
-    { src: img4, double: false, title: "Megavolume" },
-    { src: img5, double: false, title: "Megavolume" },
-    { src: volume, double: true, title: "Volume" },
-    { src: img9, double: false, title: "Laminazione" },
+    { src: laminazione, double: true, title: "LAMINAZIONE" },
+    { src: img4, double: false, title: "MEGAVOLUME" },
+    { src: img5, double: false, title: "MEGAVOLUME" },
+    { src: volume, double: true, title: "VOLUME" },
+    { src: img9, double: false, title: "LAMINAZIONE" },
     { src: "", double: false },
-    { src: img7, double: false, title: "Volume" },
-    { src: img12, double: false, title: "Laminazione" },
+    { src: img7, double: false, title: "VOLUME" },
+    { src: img12, double: false, title: "LAMINAZIONE" },
     { src: "", double: false },
-    { src: wet, double: true, title: "Wet" },
+    { src: wet, double: true, title: "WET" },
     { src: "", double: false },
-    { src: img1, double: false, title: "Laminazione" },
-    { src: img2, double: false, title: "Laminazione" },
-    { src: img3, double: false, title: "Laminazione" },
-    { src: img6, double: false, title: "Laminazione" },
+    { src: img1, double: false, title: "LAMINAZIONE" },
+    { src: img2, double: false, title: "LAMINAZIONE" },
+    { src: img3, double: false, title: "LAMINAZIONE" },
+    { src: img6, double: false, title: "LAMINAZIONE" },
   ];
   return (
-    <Container fluid>
-      <WhiteSpace />
-      <Row className="px-2 ">
+    <Container fluid className="section-galleria">
+      <Row className="ms-3 my-5">
+        <TitleSection label={"GALLERIA"} />
         {images.map((imgObj, index) => (
           <Col
             xs={imgObj.double ? 12 : 6}
             md={imgObj.double ? 8 : 4}
             lg={imgObj.double ? 6 : 3}
             key={index}
-            className="p-0"
+            className="pt-4 p-0"
           >
             {imgObj.src ? (
               <ImageCard
@@ -75,7 +76,6 @@ export default function ImageGrid() {
           </Col>
         ))}
       </Row>
-      <WhiteSpace />
     </Container>
   );
 }
