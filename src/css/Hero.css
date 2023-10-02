@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dela+Gothic+One&display=swap");
 .hero-section {
   width: 100%;
   position: relative;
   padding: 0;
   overflow: hidden;
-  z-index: -5;
+  z-index: -2;
   align-items: center;
+  font-family: "Dela Gothic One", cursive;
 }
 
 .hero-video {
@@ -33,6 +33,5 @@
   position: absolute;
   left: 10%;
   top: 70%;
-  color: rgb(255, 255, 255);
-  font-family: "Dela Gothic One", cursive;
+  color: white;
 }

@@ -16,9 +16,9 @@ export default function ListinoPrezzi() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-      <Col xs={12} md={3} className="ruler-left mt-4 mb-2">
+      <Col xs={12} md={3} className="ruler-left mt-2 mb-2">
         <h3
-          className={`p-2 mb-4 menu-title ${isOpen ? "open" : ""}`}
+          className={`p-2 m-0 menu-title ${isOpen ? "open" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {title}
@@ -71,10 +71,10 @@ export default function ListinoPrezzi() {
   ];
 
   return (
-    <Container fluid className="section-listinoprezzi">
-      <Row className="ms-3 my-5">
+    <Container fluid className="section-listinoprezzi p-0">
+      <Row className="">
         <TitleSection label={"LISTINO PREZZI"} />
-        <Col xs={12} md={3} className="py-4">
+        <Col xs={12} md={3} className="">
           <h4>
             Vieni a lasciarti coccolare da trattamenti per la bellezza di tutto
             il tuo corpo.

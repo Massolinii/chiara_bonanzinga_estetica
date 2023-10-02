@@ -1,21 +1,9 @@
-.section-listinoprezzi {
-  color: blanchedalmond;
-  font-family: "Fira Sans", sans-serif;
-}
-
-.menu-item {
-  display: flex;
-  flex-direction: column;
-}
-
 .menu-service {
-  text-align: left;
   font-size: larger;
 }
 
 .menu-price {
   text-align: right;
-  margin-bottom: 10px;
 }
 
 .small-text {
@@ -47,6 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .menu-title::before {
@@ -63,7 +52,7 @@
 .menu-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.5s ease;
 }
 
 .show {

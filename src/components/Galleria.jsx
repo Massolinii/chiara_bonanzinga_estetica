@@ -53,8 +53,8 @@ export default function ImageGrid() {
     { src: img6, double: false, title: "LAMINAZIONE" },
   ];
   return (
-    <Container fluid className="section-galleria">
-      <Row className="ms-3 my-5">
+    <Container fluid className="section-galleria p-0">
+      <Row className="">
         <TitleSection label={"GALLERIA"} />
         {images.map((imgObj, index) => (
           <Col
@@ -69,6 +69,7 @@ export default function ImageGrid() {
                 src={imgObj.src}
                 alt={`Image ${index + 1}`}
                 title={imgObj.title}
+                loading="lazy"
               />
             ) : (
               <div className="empty-space"></div>
