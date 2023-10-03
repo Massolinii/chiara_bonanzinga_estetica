@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 import "../css/NavBar.css";
@@ -6,35 +7,45 @@ import "../css/NavBar.css";
 export default function NavBar() {
   const [expanded, setExpanded] = useState(false);
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 300;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar expanded={expanded}>
-      <Container fluid>
+    <Navbar expanded={expanded} className={scrolled ? "scrolled" : ""}>
+      <Container fluid className="container-navbar">
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <a
-              to="/trattamenti"
+            <Link
+              to="tp-tipiciglia"
+              smooth={true}
+              duration={200}
               className="full-width-link "
-              onClick={() => setExpanded(false)}
             >
               Trattamenti
-            </a>
+            </Link>
             {/* NavBar logo desktop */}
             <Navbar.Brand href="/" className="navbar-logo-desktop">
               <img
                 src="/logo_chiara.webp"
                 alt="logo Chiara Lashmaker"
                 className="navbar-logo"
-                onClick={() => setExpanded(false)}
               />
             </Navbar.Brand>
 
-            <a
-              to="/galleria"
-              className="full-width-link"
-              onClick={() => setExpanded(false)}
-            >
+            <Link to="/galleria" className="full-width-link">
               Galleria
-            </a>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

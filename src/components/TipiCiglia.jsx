@@ -3,7 +3,11 @@ import TitleSection from "./TitleSection";
 
 export default function TipiCiglia() {
   return (
-    <div className="section-tipiciglia">
+    <div id="tp-tipiciglia">
+      <br />
+      <br />
+      <br />
+      <br />
       <TitleSection label={"I TRATTAMENTI"} />
       <h5 className="my-5">
         <span className="titolo-trattamento">LAMINAZIONE</span>,{" "}

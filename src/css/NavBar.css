@@ -1,11 +1,13 @@
 .navbar {
   height: 7rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   font-family: "Poppins", sans-serif;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: background-color 2s ease, border-bottom 2s ease-in;
+  z-index: 100;
 }
 
 .navbar-collapse {
@@ -20,6 +22,7 @@
 
 .navbar-brand {
   margin-right: 0;
+  margin: 0px 20px;
 }
 
 .navbar-logo {
@@ -34,7 +37,17 @@
 .full-width-link {
   color: rgb(0, 0, 0);
   text-decoration: none;
+  cursor: pointer;
   padding: 6px;
   padding-left: 2vw;
   padding-right: 2vw;
+}
+
+.navbar.scrolled {
+  background-color: rgba(10, 10, 10, 0.85);
+  border-bottom: 3px solid var(--main-color);
+}
+
+.navbar.scrolled .full-width-link {
+  color: white;
 }

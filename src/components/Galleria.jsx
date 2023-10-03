@@ -20,37 +20,43 @@ import img14 from "../assets/Galleria/gallery_14.webp";
 import img15 from "../assets/Galleria/gallery_15.webp";
 import img16 from "../assets/Galleria/gallery_16.webp";
 
+import lash from "../assets/Svg/lash-svg.svg";
+import sassynails from "../assets/Svg/sassynails.svg";
+import mascara from "../assets/Svg/mascara.svg";
+
 import laminazione from "../assets/ServiziCiglia/laminazione.webp";
 import megavolume from "../assets/ServiziCiglia/megavolume.webp";
 import onetoone from "../assets/ServiziCiglia/onetoone.webp";
 import volume from "../assets/ServiziCiglia/volume.webp";
 import wet from "../assets/ServiziCiglia/wet.webp";
-import WhiteSpace from "./TitleSection";
+
 import TitleSection from "./TitleSection";
 
 export default function ImageGrid() {
   const images = [
-    { src: img11, double: false, title: "WET" },
-    { src: img8, double: false, title: "ONE TO ONE" },
-    { src: "", double: false },
-    { src: img13, double: false, title: "ONE TO ONE" },
-    { src: "", double: false },
-    { src: "", double: false },
-    { src: laminazione, double: true, title: "LAMINAZIONE" },
-    { src: img4, double: false, title: "MEGAVOLUME" },
-    { src: img5, double: false, title: "MEGAVOLUME" },
-    { src: volume, double: true, title: "VOLUME" },
-    { src: img9, double: false, title: "LAMINAZIONE" },
-    { src: "", double: false },
-    { src: img7, double: false, title: "VOLUME" },
-    { src: img12, double: false, title: "LAMINAZIONE" },
-    { src: "", double: false },
-    { src: wet, double: true, title: "WET" },
-    { src: "", double: false },
-    { src: img1, double: false, title: "LAMINAZIONE" },
-    { src: img2, double: false, title: "LAMINAZIONE" },
-    { src: img3, double: false, title: "LAMINAZIONE" },
-    { src: img6, double: false, title: "LAMINAZIONE" },
+    { src: img9, type: "normal", title: "LAMINAZIONE" },
+    { src: img12, type: "normal", title: "LAMINAZIONE" },
+    { src: laminazione, type: "double", title: "LAMINAZIONE" },
+    { src: img1, type: "normal", title: "LAMINAZIONE" },
+    { src: img2, type: "normal", title: "LAMINAZIONE" },
+    { src: lash, type: "svg" },
+    { src: img6, type: "normal", title: "LAMINAZIONE" },
+
+    { src: volume, type: "double", title: "VOLUME" },
+    { src: img8, type: "normal", title: "VOLUME" },
+    { src: img7, type: "normal", title: "VOLUME" },
+
+    { src: megavolume, type: "double", title: "MEGAVOLUME" },
+    { src: img4, type: "normal", title: "MEGAVOLUME" },
+    { src: img5, type: "normal", title: "MEGAVOLUME" },
+
+    { src: mascara, type: "svg" },
+    { src: img13, type: "normal", title: "ONE TO ONE" },
+    { src: onetoone, type: "double", title: "ONE TO ONE" },
+
+    { src: sassynails, type: "svg" },
+    { src: img11, type: "normal", title: "WET" },
+    { src: wet, type: "double", title: "WET" },
   ];
   return (
     <Container fluid className="section-galleria p-0">
@@ -58,22 +64,19 @@ export default function ImageGrid() {
         <TitleSection label={"GALLERIA"} />
         {images.map((imgObj, index) => (
           <Col
-            xs={imgObj.double ? 12 : 6}
-            md={imgObj.double ? 8 : 4}
-            lg={imgObj.double ? 6 : 3}
-            key={index}
-            className="pt-4 p-0"
+            xs={imgObj.type === "double" ? 12 : 6}
+            md={imgObj.type === "double" ? 8 : 4}
+            lg={imgObj.type === "double" ? 6 : 3}
+            key={imgObj.src || index}
+            className="py-4 px-0"
           >
-            {imgObj.src ? (
-              <ImageCard
-                src={imgObj.src}
-                alt={`Image ${index + 1}`}
-                title={imgObj.title}
-                loading="lazy"
-              />
-            ) : (
-              <div className="empty-space"></div>
-            )}
+            <ImageCard
+              src={imgObj.src}
+              alt={`Image ${index + 1}`}
+              title={imgObj.title}
+              type={imgObj.type}
+              loading="lazy"
+            />
           </Col>
         ))}
       </Row>

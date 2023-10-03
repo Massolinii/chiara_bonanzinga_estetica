@@ -33,5 +33,7 @@
   position: absolute;
   left: 10%;
   top: 70%;
-  color: white;
+  color: rgb(255, 255, 255);
+  background: rgba(145, 106, 75, 0.5);
+  padding: 0 1rem;
 }
