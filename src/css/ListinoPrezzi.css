@@ -13,6 +13,21 @@
 .ruler-left {
   border: 0;
   border-left: 2px solid blanchedalmond;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.ruler-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
 }
 
 .clickable {
@@ -53,6 +68,15 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
+}
+
+.menu-item {
+  transition: font-size 0.3s ease, background-color 0.66s ease;
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: x-large;
 }
 
 .show {

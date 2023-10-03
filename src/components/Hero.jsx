@@ -3,7 +3,7 @@ import videoHero from "../assets/hero_chiara_60.mp4";
 
 export default function Hero() {
   return (
-    <div className="hero-section">
+    <div className="hero-section" id="tp-home">
       <div className="video-overlay"></div>
       <video className="hero-video" autoPlay loop muted>
         <source src={videoHero} type="video/mp4" />

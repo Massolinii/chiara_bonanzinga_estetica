@@ -3,6 +3,10 @@ import "../css/ListinoPrezzi.css";
 import { useState } from "react";
 import TitleSection from "./TitleSection";
 
+import nailsbg from "../assets/Svg/nailsbg.svg";
+import waxleg from "../assets/Svg/waxleg.svg";
+import lashbg from "../assets/Svg/lash-bg.svg";
+
 export default function ListinoPrezzi() {
   const formatPrice = (price) => (
     <>
@@ -12,13 +16,20 @@ export default function ListinoPrezzi() {
     </>
   );
 
-  const MenuSection = ({ title, items }) => {
+  const MenuSection = ({ title, items, bgImage }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-      <Col xs={12} md={3} className="ruler-left mt-2 mb-2">
+      <Col
+        xs={12}
+        md={3}
+        className={`position-relative ruler-left mt-2 mb-2 ${
+          isOpen ? "bg-visible" : "bg-hidden"
+        }`}
+        style={{ backgroundImage: `url(${bgImage})` }}
+      >
         <h3
-          className={`p-2 m-0 menu-title ${isOpen ? "open" : ""}`}
+          className={`p-2 m-0 mb-5 menu-title ${isOpen ? "open" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {title}
@@ -83,9 +94,9 @@ export default function ListinoPrezzi() {
             per chiunque.
           </h4>
         </Col>
-        <MenuSection title="Ciglia" items={ciglia} />
-        <MenuSection title="Cere" items={cere} />
-        <MenuSection title="Unghie" items={unghie} />
+        <MenuSection title="Ciglia" items={ciglia} bgImage={lashbg} />
+        <MenuSection title="Cere" items={cere} bgImage={waxleg} />
+        <MenuSection title="Unghie" items={unghie} bgImage={nailsbg} />
       </Row>
     </Container>
   );

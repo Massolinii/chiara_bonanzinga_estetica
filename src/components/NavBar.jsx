@@ -35,15 +35,22 @@ export default function NavBar() {
               Trattamenti
             </Link>
             {/* NavBar logo desktop */}
-            <Navbar.Brand href="/" className="navbar-logo-desktop">
-              <img
-                src="/logo_chiara.webp"
-                alt="logo Chiara Lashmaker"
-                className="navbar-logo"
-              />
+            <Navbar.Brand className="navbar-logo-desktop">
+              <Link to="tp-home" smooth={true} duration={200}>
+                <img
+                  src="/logo_chiara.webp"
+                  alt="logo Chiara Lashmaker"
+                  className="navbar-logo"
+                />
+              </Link>
             </Navbar.Brand>
 
-            <Link to="/galleria" className="full-width-link">
+            <Link
+              to="tp-galleria"
+              smooth={true}
+              duration={200}
+              className="full-width-link"
+            >
               Galleria
             </Link>
           </Nav>

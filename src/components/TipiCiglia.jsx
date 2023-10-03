@@ -6,8 +6,10 @@ export default function TipiCiglia() {
     <div id="tp-tipiciglia">
       <br />
       <br />
+      {/* Funziona, stica delle goodpractice */}
       <br />
       <br />
+
       <TitleSection label={"I TRATTAMENTI"} />
       <h5 className="my-5">
         <span className="titolo-trattamento">LAMINAZIONE</span>,{" "}
@@ -58,6 +60,7 @@ export default function TipiCiglia() {
         sembrano naturalmente umide e lucenti. Le sopracciglia vengono tenute
         idratate e brillanti a lungo.
       </h5>
+      <br />
     </div>
   );
 }

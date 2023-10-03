@@ -21,7 +21,7 @@ import img15 from "../assets/Galleria/gallery_15.webp";
 import img16 from "../assets/Galleria/gallery_16.webp";
 
 import lash from "../assets/Svg/lash-svg.svg";
-import sassynails from "../assets/Svg/sassynails.svg";
+import curler from "../assets/Svg/curler.svg";
 import mascara from "../assets/Svg/mascara.svg";
 
 import laminazione from "../assets/ServiziCiglia/laminazione.webp";
@@ -54,12 +54,17 @@ export default function ImageGrid() {
     { src: img13, type: "normal", title: "ONE TO ONE" },
     { src: onetoone, type: "double", title: "ONE TO ONE" },
 
-    { src: sassynails, type: "svg" },
+    { src: curler, type: "svg" },
     { src: img11, type: "normal", title: "WET" },
     { src: wet, type: "double", title: "WET" },
   ];
   return (
-    <Container fluid className="section-galleria p-0">
+    <Container fluid className="section-galleria p-0" id="tp-galleria">
+      <br />
+      <br />
+      {/* Funziona, stica delle goodpractice */}
+      <br />
+      <br />
       <Row className="">
         <TitleSection label={"GALLERIA"} />
         {images.map((imgObj, index) => (
