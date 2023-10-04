@@ -59,26 +59,25 @@ export default function ListinoPrezzi() {
 
   const cere = [
     { name: "Ceretta gambe", price: 20 },
-    { name: "Ceretta gambe + inguine integrale", price: 30 },
+    { name: "Ceretta gambe + inguine integrale + glutei", price: 30 },
     { name: "Ceretta mezze braccia (entrambe)", price: 5 },
     { name: "Ceretta braccia intere", price: 10 },
     { name: "Ceretta ascelle", price: 5 },
     { name: "Ceretta sopracciglia", price: 5 },
     { name: "Ceretta baffi", price: 1 },
-    { name: "Ceretta glutei", price: 5 },
     { name: "Ceretta schiena", price: 5 },
     { name: "Ceretta total body", price: 40 },
   ];
 
   const unghie = [
-    { name: "Semipermanente mani", price: 20 },
-    { name: "Semipermanente piedi", price: 20 },
-    { name: "Manicure", price: 10 },
-    { name: "Smontaggio + Manicure", price: 15 },
+    { name: "Semipermanente mani", price: 18 },
+    { name: "Semipermanente piedi", price: 18 },
+    { name: "Manicure", price: 5 },
+    { name: "Smontaggio + Manicure", price: 10 },
     { name: "Allungamento in gel con cartina", price: 25 },
-    { name: "Refill allungamento in gel", price: 20 },
+    { name: "Refill in gel", price: 20 },
     { name: "Allungamento in acrigel con dual form", price: 30 },
-    { name: "Refill allungamento in acrigel", price: 25 },
+    { name: "Refill in acrigel", price: 25 },
   ];
 
   return (

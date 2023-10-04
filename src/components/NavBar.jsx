@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Col, Row } from "react-bootstrap";
 
 import "../css/NavBar.css";
 
@@ -24,17 +24,22 @@ export default function NavBar() {
   return (
     <Navbar expanded={expanded} className={scrolled ? "scrolled" : ""}>
       <Container fluid className="container-navbar">
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav>
-            <Link
-              to="tp-tipiciglia"
-              smooth={true}
-              duration={200}
-              className="full-width-link "
-            >
-              Trattamenti
-            </Link>
-            {/* NavBar logo desktop */}
+        <Row className="w-100 justify-content-center">
+          <Col xs={4} md={1} className="d-flex justify-content-center">
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav>
+                <Link
+                  to="tp-tipiciglia"
+                  smooth={true}
+                  duration={200}
+                  className="full-width-link"
+                >
+                  Trattamenti
+                </Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Col>
+          <Col xs={4} md={1} className="d-flex justify-content-center">
             <Navbar.Brand className="navbar-logo-desktop">
               <Link to="tp-home" smooth={true} duration={200}>
                 <img
@@ -44,17 +49,22 @@ export default function NavBar() {
                 />
               </Link>
             </Navbar.Brand>
-
-            <Link
-              to="tp-galleria"
-              smooth={true}
-              duration={200}
-              className="full-width-link"
-            >
-              Galleria
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
+          </Col>
+          <Col xs={4} md={1} className="d-flex justify-content-center">
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav>
+                <Link
+                  to="tp-galleria"
+                  smooth={true}
+                  duration={200}
+                  className="full-width-link"
+                >
+                  Galleria
+                </Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Col>
+        </Row>
       </Container>
     </Navbar>
   );

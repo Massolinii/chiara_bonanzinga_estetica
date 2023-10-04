@@ -11,54 +11,50 @@ export default function TipiCiglia() {
       <br />
 
       <TitleSection label={"I TRATTAMENTI"} />
-      <h5 className="my-5">
+      <h5 className="my-5 border-left">
         <span className="titolo-trattamento">LAMINAZIONE</span>,{" "}
         <span className="catchphrase">
           La soluzione più semplice per ciglia da urlo.
         </span>
-        <br />
-        Un trattamento rivoluzionario per sopracciglia folte e ben definite.
-        Utilizza una formula speciale per lisciare e sollevare i peli, dando
-        alle tue sopracciglia un aspetto più pieno e ordinato.
+        <br /> <br />
+        Rivela la bellezza naturale delle tue ciglia con la laminazione: una
+        svolta lussuosa per uno sguardo luminoso e impeccabile.
       </h5>
-      <h5 className="my-5">
-        <span className="titolo-trattamento">VOLUME</span>,{" "}
-        <span className="catchphrase">
-          Dona uno sguardo che non passa inosservato.
-        </span>
-        <br />
-        Pensato per chi desidera sopracciglia più folte e drammatiche. I peli
-        vengono posizionati in modo da creare un effetto tridimensionale,
-        aggiungendo profondità e volume alle tue sopracciglia.
-      </h5>
-      <h5 className="my-5">
-        <span className="titolo-trattamento">MEGAVOLUME</span>,{" "}
-        <span className="catchphrase">
-          Per chi vuole ciglia che catturano l'attenzione.
-        </span>
-        <br />
-        Porta il concetto di volume al livello successivo. Questo trattamento
-        utilizza ancor più peli per creare un look ultra-drammatico e audace.
-      </h5>
-      <h5 className="my-5">
+      <h5 className="my-5 border-left">
         <span className="titolo-trattamento">ONE TO ONE</span>,{" "}
         <span className="catchphrase">
           Adatto ad un look naturale ma ben definito.
         </span>
-        <br />
-        Personalizzato per soddisfare le esigenze individuali. Ogni pelo viene
-        posizionato singolarmente, permettendo un controllo totale sulla forma e
-        sullo stile delle tue sopracciglia.
+        <br /> <br />
+        Con il trattamento One To One, ogni ciglia riceve l'attenzione che
+        merita, per uno sguardo straordinario.
       </h5>
-      <h5 className="my-5">
+      <h5 className="my-5 border-left">
         <span className="titolo-trattamento">WET</span>,{" "}
         <span className="catchphrase">
           La scelta più semplice per occasioni da urlo.
         </span>
-        <br />
-        Offre un aspetto "appena uscito dalla doccia", con sopracciglia che
-        sembrano naturalmente umide e lucenti. Le sopracciglia vengono tenute
-        idratate e brillanti a lungo.
+        <br /> <br />
+        Per ciglia dall'effetto bagnato e seducente, scegli il trattamento Wet:
+        un'esplosione di sensualità per i tuoi occhi.
+      </h5>
+      <h5 className="my-5 border-left">
+        <span className="titolo-trattamento">VOLUME</span>,{" "}
+        <span className="catchphrase">
+          Dona uno sguardo che non passa inosservato.
+        </span>
+        <br /> <br />
+        Aggiungi profondità e volume magnetico al tuo sguardo con il trattamento
+        volume per ciglia.
+      </h5>
+      <h5 className="my-5 border-left">
+        <span className="titolo-trattamento">MEGAVOLUME</span>,{" "}
+        <span className="catchphrase">
+          Per chi vuole ciglia che catturano l'attenzione.
+        </span>
+        <br /> <br />
+        Ciglia da passerella con il trattamento Megavolume: effetto spettacolare
+        garantito.
       </h5>
       <br />
     </div>

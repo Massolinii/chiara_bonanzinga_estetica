@@ -44,6 +44,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   font-size: clamp(1rem, 10vw, 2rem);
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }

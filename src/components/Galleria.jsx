@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ImageCard from "./ImageCard";
 import "../css/Galleria.css";
@@ -33,13 +33,39 @@ import wet from "../assets/ServiziCiglia/wet.webp";
 import TitleSection from "./TitleSection";
 
 export default function ImageGrid() {
-  const images = [
+  const desktopImages = [
     { src: img9, type: "normal", title: "LAMINAZIONE" },
     { src: img12, type: "normal", title: "LAMINAZIONE" },
     { src: laminazione, type: "double", title: "LAMINAZIONE" },
     { src: img1, type: "normal", title: "LAMINAZIONE" },
-    { src: img2, type: "normal", title: "LAMINAZIONE" },
     { src: lash, type: "svg" },
+    { src: img2, type: "normal", title: "LAMINAZIONE" },
+    { src: img6, type: "normal", title: "LAMINAZIONE" },
+
+    { src: volume, type: "double", title: "VOLUME" },
+    { src: img8, type: "normal", title: "VOLUME" },
+    { src: img7, type: "normal", title: "VOLUME" },
+
+    { src: img4, type: "normal", title: "MEGAVOLUME" },
+    { src: img5, type: "normal", title: "MEGAVOLUME" },
+    { src: megavolume, type: "double", title: "MEGAVOLUME" },
+
+    { src: onetoone, type: "double", title: "ONE TO ONE" },
+    { src: img13, type: "normal", title: "ONE TO ONE" },
+    { src: mascara, type: "svg" },
+
+    { src: curler, type: "svg" },
+    { src: img11, type: "normal", title: "WET" },
+    { src: wet, type: "double", title: "WET" },
+  ];
+
+  const mobileImages = [
+    { src: laminazione, type: "double", title: "LAMINAZIONE" },
+    { src: img9, type: "normal", title: "LAMINAZIONE" },
+    { src: img12, type: "normal", title: "LAMINAZIONE" },
+    { src: img1, type: "normal", title: "LAMINAZIONE" },
+    { src: lash, type: "svg" },
+    { src: img2, type: "normal", title: "LAMINAZIONE" },
     { src: img6, type: "normal", title: "LAMINAZIONE" },
 
     { src: volume, type: "double", title: "VOLUME" },
@@ -50,14 +76,34 @@ export default function ImageGrid() {
     { src: img4, type: "normal", title: "MEGAVOLUME" },
     { src: img5, type: "normal", title: "MEGAVOLUME" },
 
-    { src: mascara, type: "svg" },
-    { src: img13, type: "normal", title: "ONE TO ONE" },
     { src: onetoone, type: "double", title: "ONE TO ONE" },
+    { src: img13, type: "normal", title: "ONE TO ONE" },
+    { src: mascara, type: "svg" },
 
+    { src: wet, type: "double", title: "WET" },
     { src: curler, type: "svg" },
     { src: img11, type: "normal", title: "WET" },
-    { src: wet, type: "double", title: "WET" },
   ];
+
+  const [currentImages, setCurrentImages] = useState(desktopImages);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 767) {
+        setCurrentImages(mobileImages);
+      } else {
+        setCurrentImages(desktopImages);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Container fluid className="section-galleria p-0" id="tp-galleria">
       <br />
@@ -67,10 +113,9 @@ export default function ImageGrid() {
       <br />
       <Row className="">
         <TitleSection label={"GALLERIA"} />
-        {images.map((imgObj, index) => (
+        {currentImages.map((imgObj, index) => (
           <Col
             xs={imgObj.type === "double" ? 12 : 6}
-            md={imgObj.type === "double" ? 8 : 4}
             lg={imgObj.type === "double" ? 6 : 3}
             key={imgObj.src || index}
             className="py-4 px-0"

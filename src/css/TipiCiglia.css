@@ -4,6 +4,12 @@
 }
 
 .catchphrase {
+  padding-top: 2em;
   font-weight: 500;
   font-style: italic;
+}
+
+.border-left {
+  border-left: 2px solid antiquewhite;
+  padding-left: 1rem;
 }
