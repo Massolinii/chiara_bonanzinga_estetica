@@ -8,7 +8,6 @@ import ListinoPrezzi from "./components/ListinoPrezzi";
 import TipiCiglia from "./components/TipiCiglia";
 import Contatti from "./components/Contatti";
 import { Container } from "react-bootstrap";
-
 function App() {
   return (
     <>
