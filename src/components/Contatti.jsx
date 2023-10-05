@@ -5,8 +5,13 @@ import "../css/Contatti.css";
 export default function Contatti() {
   return (
     <Container fluid className="contact-section">
+      <TitleSection label={"CONTATTI"} />
+      <Row className="justify-content-center my-5">
+        <Col xs={12} className="text-center">
+          <h4>Sede in Via Palermo, Messina (ME)</h4>
+        </Col>
+      </Row>
       <Row className="contact-info justify-content-center">
-        <TitleSection label={"CONTATTI"} />
         <Col xs={12} sm={8} md={4} lg={2}>
           <a href="tel:3479844653" className="contact-text">
             <div className="contact-item d-flex align-items-center justify-content-center">
